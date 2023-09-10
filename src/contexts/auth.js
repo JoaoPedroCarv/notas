@@ -55,7 +55,7 @@ function AuthProvider({ children }){
       storageUser(data);
       setLoadingAuth(false);
       toast.success("Bem-vindo(a) de volta!")
-      navigate("/dashboard")
+      navigate("/verNotas")
     })
     .catch((error) => {
       console.log(error);
