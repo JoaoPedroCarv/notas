@@ -2,6 +2,7 @@ import { useState, useContext } from 'react'
 
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../../contexts/auth'
+import './style.css'
 
 
 export default function Login(){
@@ -23,10 +24,9 @@ export default function Login(){
   return(
     <div className="container-center">
       <div className="login">
-        <div className="login-area">
-                 </div>
+      
 
-        <form onSubmit={handleSignIn}>
+        <form onSubmit={handleSignIn} className='input'>
           <h1>Entrar</h1>
           <input 
             type="text" 

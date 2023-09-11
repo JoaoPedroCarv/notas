@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../../services/firebaseConnection";
+import './style.css'
 
 function ListaNotas() {
   const [titulosNotas, setTitulosNotas] = useState([]);
